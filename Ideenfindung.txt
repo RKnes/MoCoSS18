@@ -1,0 +1,42 @@
+Voraussetzungen:
+	- Informationen teilen können
+	- Internet Backend (Webservice)
+	- Datenbank nutzen 
+	- Sensoren benutzen 
+
+
+Ideenfindung:
+
+	- Ortungssystem (Machbar)
+	- Produktfinder (Machbar)
+	- Café Sonnenstand (Originell)
+	- Digitale Modenschau (Machbar)
+	- Treuepunkte-Sammeln (Originell)
+	- Prospekte/Angebote in der Nähe (Machbar) 
+
+	- Gutscheine
+	- Lokale Shoppingberatung Finder
+	- Teilen können
+	- Andere über gute Angebote Nachricht schicken
+	- Lokal Yelp
+	- Map Übersicht
+	- Benachrichtigungsfunktion
+	- Bewertung, benachrichtigt andere
+	- QR-Code Nutzung zur Übertragung
+	- Wo finde ich was und zu welchem Preis
+	- Bewertungen (Produkte, Läden)
+	- Center-Navigation
+	- Parkplatzchecker
+	- Familie & Freunde
+	- Erfrischung
+	- Kürzester Weg aus dem Center/ nächster Notausgang
+	- Map für Center
+	- Fluchtplan 2D
+	- 2D Darstellung des Centers
+	- Laden Verfügbarkeit
+	- Cafe Bewertung
+	- Nährwertrechner
+	- Event Notificator
+	- Temperaturscanner für Getränke
+	- Preise vergleichen
+	- Stadtplan
