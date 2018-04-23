@@ -1,0 +1,6 @@
+git init	Neues Repo anlegen
+git clone Pfad	Repo kopieren	
+git pull	Aktualisieren
+git add*/Dateiname	zum Index hinzufügen
+git commit -m " "	Änderungen bestätigen
+git push origin master	Hochladen 
