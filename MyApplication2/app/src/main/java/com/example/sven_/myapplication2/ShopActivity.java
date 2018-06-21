@@ -1,23 +1,19 @@
 package com.example.sven_.myapplication2;
 
 import android.content.Intent;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
 
 public class ShopActivity extends AppCompatActivity {
 
-    public DrawerLayout mDrawerLayout;
-    public ActionBarDrawerToggle mToggle;
+    ListView shopListView;
+    String[] shop_names;
+    String[] shop_description;
+    String[] shop_distance;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,15 +21,23 @@ public class ShopActivity extends AppCompatActivity {
         setContentView(R.layout.activity_shop);
 
 
-/*
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.toolbar);
-        mToggle = new ActionBarDrawerToggle(this, mDrawerLayout, "Open", "Close");
+        Resources res = getResources();
+        shopListView = (ListView) findViewById(R.id.shopListView);
+        //bind the string-arrays from resources/string.xml
+        shop_names = res.getStringArray(R.array.shop_names);
+        shop_description = res.getStringArray(R.array.shop_description);
+        shop_distance = res.getStringArray(R.array.shop_distance);
 
-        mDrawerLayout.addDrawerListener(mToggle);
-        mToggle.syncState();
+        ShopAdapter shopAdapter = new ShopAdapter(this, shop_names, shop_description, shop_distance);
+        shopListView.setAdapter(shopAdapter);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-*/
-
+        shopListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent showShopDetails = new Intent(getApplicationContext(), ShopDetailsActivity.class);
+                showShopDetails.putExtra("com.example.sven_.SHOP_INDEX", position);
+                startActivity(showShopDetails);
+            }
+        });
     }
 }

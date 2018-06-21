@@ -17,4 +17,23 @@
     <string name="menu_settings">Einstellungen</string>
     <string name="menu_logout">Abmelden</string>
 
+    <!-- ShopListView activity_shop -->
+    <string-array name="shop_names">
+        <item>dm</item>
+        <item>Saturn</item>
+        <item>Jack and Jones</item>
+    </string-array>
+
+    <string-array name="shop_description">
+        <item>Drogerie</item>
+        <item>Elektornik</item>
+        <item>Bekleidung</item>
+    </string-array>
+
+    <string-array name="shop_distance">
+        <item>200m</item>
+        <item>1200m</item>
+        <item>500m</item>
+    </string-array>
+
 </resources>
