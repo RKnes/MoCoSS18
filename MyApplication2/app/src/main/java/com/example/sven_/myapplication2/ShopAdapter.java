@@ -7,6 +7,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+/**
+ * Der Shopadapter
+ */
 public class ShopAdapter extends BaseAdapter {
 
     LayoutInflater mInflator;
@@ -20,8 +23,6 @@ public class ShopAdapter extends BaseAdapter {
         shop_description = s_des;
         shop_distance = s_dis;
         mInflator = (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-
-
     }
 
     @Override

@@ -8,6 +8,19 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+/*******************************TO DO'S****************************
+ * - Kurzbeschreibung
+ * - Entfernung
+ *         - Soll das überhaupt rein?
+ */
+
+/**
+ * In dieser Klasse werden alle verfügbaren Shops in einer Liste dargestellt
+ * Die wesentlichen Informationen sind:
+ * - Name
+ * - Kurzbeschreibung
+ * - Entfernung
+ */
 public class ShopActivity extends AppCompatActivity {
 
     ListView shopListView;
@@ -31,6 +44,10 @@ public class ShopActivity extends AppCompatActivity {
         ShopAdapter shopAdapter = new ShopAdapter(this, shop_names, shop_description, shop_distance);
         shopListView.setAdapter(shopAdapter);
 
+        /**
+         * Ein Klick-Listener der die Activity ShopDetailsActivity startet,
+         * welche dann Details zum angeklicken Shop zeigt
+         */
         shopListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
