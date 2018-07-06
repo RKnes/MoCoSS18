@@ -9,6 +9,11 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+    <!-- Shop Details -->
+    <string name="shop_name">Shop Name</string>
+    <string name="shop_description">Beschreibung</string>
+    <string name="shop_button">Kommentieren</string>
+
     <!-- Navigation -->
     <string name="menu_home">Home</string>
     <string name="menu_overview">Übersicht</string>

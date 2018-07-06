@@ -20,9 +20,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:fontFamily="@font/Hello Beauty Personal Use"
-            android:text="Treuepunkte"
-            android:textSize="34dp" />
+            android:fontFamily="@font/sunshine"
+            android:text="@string/app_name"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:textSize="44dp" />
 
     </RelativeLayout>
 
