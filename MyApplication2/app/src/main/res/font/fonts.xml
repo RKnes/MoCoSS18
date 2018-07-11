@@ -4,6 +4,6 @@
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/sunshine"/>
+        android:font="@font/BrooklynSmooth"/>
 
 </font-family>

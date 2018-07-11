@@ -9,6 +9,11 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+    <!-- Listview Details -->
+    <string name="listview_name">Name</string>
+    <string name="listview_description">Description</string>
+    <string name="listview_distance">Distance</string>
+
     <!-- Shop Details -->
     <string name="shop_name">Shop Name</string>
     <string name="shop_description">Beschreibung</string>
