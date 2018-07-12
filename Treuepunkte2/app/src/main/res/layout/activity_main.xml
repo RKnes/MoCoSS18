@@ -7,7 +7,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="@drawable/gradient_blue"
+    android:background="@color/colorBackground"
     android:weightSum="10">
 
     <RelativeLayout
@@ -17,14 +17,9 @@
 
         <TextView
             android:id="@+id/textGrid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:fontFamily="@font/BrooklynSmooth"
-            android:text="@string/app_name"
-            android:paddingTop="10dp"
-            android:textStyle="bold"
-            android:textSize="44dp" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
     </RelativeLayout>
 
@@ -49,8 +44,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             app:cardCornerRadius="10dp"
-            app:cardElevation="10dp"
-            app:cardBackgroundColor="@color/colorBackgroundButton"            >
+            app:cardElevation="8dp">
 
             <LinearLayout
                 android:layout_gravity="center_horizontal|center_vertical"
@@ -64,15 +58,6 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:text="@string/menu_shops"
-                    android:textAlignment="center"
-                    android:fontFamily="@font/BrooklynSmooth"
-                    android:textSize="17dp"/>
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -88,8 +73,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             app:cardCornerRadius="10dp"
-            app:cardElevation="10dp"
-            app:cardBackgroundColor="@color/colorBackgroundButton">
+            app:cardElevation="8dp">
 
             <LinearLayout
                 android:layout_gravity="center_horizontal|center_vertical"
@@ -103,15 +87,6 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:text="@string/menu_favorites"
-                    android:textAlignment="center"
-                    android:fontFamily="@font/BrooklynSmooth"
-                    android:textSize="17dp"/>
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -127,30 +102,20 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             app:cardCornerRadius="10dp"
-            app:cardElevation="10dp"
-            app:cardBackgroundColor="@color/colorBackgroundButton">
+            app:cardElevation="8dp">
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_margin="16dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="129dp"
+                    android:src="@drawable/user"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/qrcode" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:text="@string/menu_qr"
-                    android:textAlignment="center"
-                    android:fontFamily="@font/BrooklynSmooth"
-                    android:textSize="17dp"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -166,8 +131,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             app:cardCornerRadius="10dp"
-            app:cardElevation="10dp"
-            app:cardBackgroundColor="@color/colorBackgroundButton">
+            app:cardElevation="8dp">
 
             <LinearLayout
                 android:layout_gravity="center_horizontal|center_vertical"
@@ -181,15 +145,6 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:text="@string/menu_settings"
-                    android:textAlignment="center"
-                    android:fontFamily="@font/BrooklynSmooth"
-                    android:textSize="17dp"/>
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
